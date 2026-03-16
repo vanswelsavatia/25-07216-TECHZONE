@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone Electronics Online Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #0073e6, #004080);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #004080;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #0073e6;
+            border-radius: 5px;
+        }
+
+        /* Main container */
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Product Cards */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 250px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            color: #004080;
+            margin-bottom: 5px;
+        }
+
+        .product-card p {
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
+
+        /* Order Form */
+        form {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        form h2 {
+            margin-bottom: 20px;
+            color: #004080;
+        }
+
+        form .form-group {
+            margin-bottom: 15px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="number"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        .payment-options {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .payment-options input {
+            margin-right: 5px;
+        }
+
+        form button {
+            background-color: #0073e6;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background-color: #004080;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ffd700;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            nav ul {
+                flex-direction: column;
+            }
+
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .payment-options {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<img src="image copy 4.png" alt="TechZone Logo" width="2000" height="500">
+<body>
+    <!-- Header -->
+    <header>
+        <h1>TechZone Electronics</h1>
+        <p>Your one-stop online store for quality electronics!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Order Form</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Products Section -->
+        <section>
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="image.png" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>Category: Computers</p>
+                    <p class="price">Ksh 65,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="image copy.png" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>Category: Mobile Devices</p>
+                    <p class="price">Ksh 32,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="image copy 3.png" alt="Wireless Mouse">
+                    <h3>Wireless Mouse</h3>
+                    <p>Category: Accessories</p>
+                    <p class="price">Ksh 1,500</p>
+                </div>
+                <div class="product-card">
+                    <img src="image copy 2.png" alt="External Hard Drive">
+                    <h3>External Hard Drive</h3>
+                    <p>Category: Storage</p>
+                    <p class="price">Ksh 8,000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form -->
+        <section>
+            <form>
+                <h2>Place Your Order</h2>
+
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Product</label>
+                    <select id="product" name="product" required>
+                        <option value="">--Select Product--</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Smartphone">Smartphone</option>
+                        <option value="Wireless Mouse">Wireless Mouse</option>
+                        <option value="External Hard Drive">External Hard Drive</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <div class="payment-options">
+                        <div><input type="radio" id="mpesa" name="payment" value="M-Pesa" required><label for="mpesa">M-Pesa</label></div>
+                        <div><input type="radio" id="card" name="payment" value="Card" required><label for="card">Card</label></div>
+                        <div><input type="radio" id="cod" name="payment" value="Cash on Delivery" required><label for="cod">Cash on Delivery</label></div>
+                    </div>
+                </div>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: <a href="mailto:info@techzone.co.ke">info@techzone.co.ke</a></p>
+        <p>&copy; 2026 TechZone Electronics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
